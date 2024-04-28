@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Vipin@123",
+    "database": "contacts",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Vipin@123",
+    "database": "contacts",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Vipin@123",
+    "database": "contacts",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
