@@ -1,12 +1,14 @@
 const models = require('../models');
 const faker = require('faker');
+const bcrypt = require('bcryptjs');
+const config = require('../config');
 
 const populate_user = async() => {
     let user = await models.User.create({
         name: faker.name.findName(),
         phone: faker.phone.phoneNumber(),
         email: faker.internet.email(),
-        password: faker.internet.password(),
+        password: bcrypt.hashSync("12345689", config.SALT_ROUNDS),
     })
     return user
 }
